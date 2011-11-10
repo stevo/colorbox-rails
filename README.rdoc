@@ -1,3 +1,21 @@
 = ColorboxRails
 
+Make links open in lightbox (colorbox) a breeze
+
+= Usage
+
+in your application.css
+
+<tt>//= require colorbox-rails</tt>
+
+in your application.js
+
+<tt>//= require colorbox-rails</tt>
+
+
+Then enable link to be displayed in colorbox by simply adding :colorbox => true attribute. E.g.
+
+<tt><%= link_to "My superb link", "#", :colorbox => true %></tt>
+
+
 This project rocks and uses MIT-LICENSE.
