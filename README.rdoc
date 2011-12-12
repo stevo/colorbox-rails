@@ -15,7 +15,12 @@ in your application.js
 
 Then enable link to be displayed in colorbox by simply adding :colorbox => true attribute. E.g.
 
-<tt><%= link_to "My superb link", "#", :colorbox => true %></tt>
+<tt><%= link_to "My superb link", "#", :data => { :colorbox => true } %></tt>
 
+<a href="#" data-colorbox="true">My superb link</a>
+
+Add attributes inside the :data block
+
+<tt><%= link_to "My superb link", "#", :data => { :colorbox => true, :colorbox_height => '300px', :colorbox_width => '300px', :colorbox_iframe => true } %></tt>
 
 This project rocks and uses MIT-LICENSE.
