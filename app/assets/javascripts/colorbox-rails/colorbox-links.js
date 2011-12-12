@@ -9,14 +9,14 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $('a[colorbox="true"]').live('click', function(e) {
+    $('a[data-colorbox="true"]').live('click', function(e) {
         e.preventDefault();
 
         $.colorbox(
-            {
-                height: $(this).attr("colorbox_height") || false,
-                width: $(this).attr("colorbox_width") || false,
-                iframe: $(this).attr("colorbox_iframe") || false,
+            { 
+                height: $(this).data("colorbox-height") || false,
+                width: $(this).data("colorbox-width") || false,
+                iframe: $(this).data("colorbox-iframe") || false,
                 href: $(this).attr('href'),
                 opacity: 0.5
             });
