@@ -6,7 +6,7 @@ Make links open in lightbox (colorbox) a breeze
 
 in your application.css
 
-<tt>//= require colorbox-rails</tt>
+<tt> *= require colorbox-rails</tt>
 
 in your application.js
 
