@@ -11,7 +11,7 @@
 (function($){
 
 $(document).ready(function() {
-    $('a[data-colorbox="true"]').live('click', function(e) {
+    $('a[data-colorbox="true"]').on('click', function(e) {
         e.preventDefault();
 
         $.colorbox(
