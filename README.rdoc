@@ -23,4 +23,26 @@ Add attributes inside the :data block
 
 <tt><%= link_to "My superb link", "#", :data => { :colorbox => true, :colorbox_height => '300px', :colorbox_width => '300px', :colorbox_iframe => true } %></tt>
 
+= Available data options
+
+* colorbox-height (http://www.jacklmoore.com/colorbox/#setting-height)
+* colorbox-width (http://www.jacklmoore.com/colorbox/#setting-width)
+* colorbox-max-height (http://www.jacklmoore.com/colorbox/#setting-maxHeight)
+* colorbox-max-width (http://www.jacklmoore.com/colorbox/#setting-maxWidth)
+* colorbox-iframe (http://www.jacklmoore.com/colorbox/#setting-iframe)
+* colorbox-photo (http://www.jacklmoore.com/colorbox/#setting-photo)
+* colorbox-innerheight (http://www.jacklmoore.com/colorbox/#setting-innerheight)
+* colorbox-innerwidth (http://www.jacklmoore.com/colorbox/#setting-innerwidth)
+* colorbox-title (http://www.jacklmoore.com/colorbox/#setting-title)
+* colorbox-class-name (http://www.jacklmoore.com/colorbox/#setting-className)
+* colorbox-href (http://www.jacklmoore.com/colorbox/#setting-href)
+
+= Available link options
+
+* rel (need colorbox-static data-attribute to work) (http://www.jacklmoore.com/colorbox/#setting-rel)
+
+<tt><%= link_to "My superb link", "#", rel: 'group1', :data => { :colorbox-static => true } %></tt>
+
+= License
+
 This project rocks and uses MIT-LICENSE.
