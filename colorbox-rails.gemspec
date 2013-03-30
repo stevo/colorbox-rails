@@ -9,14 +9,13 @@ require "colorbox-rails/version"
 Gem::Specification.new do |s|
   s.name        = "colorbox-rails"
   s.version     = ColorboxRails::VERSION
-  s.authors     = ["Błażej Kosmowski", "Bartłomiej Danek"]
+  s.authors     = ["Błażej Kosmowski", "Bartłomiej Danek", "Alexander Maslov"]
   s.email       = ["b.kosmowski@selleo.com"]
   s.homepage    = "http://www.selleo.com"
   s.summary     = "Simple engine making colorbox use in rails super easy"
   s.description = "Simple engine making colorbox use in rails super easy"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  #s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 3.1.1"
   s.add_dependency "jquery-rails"
