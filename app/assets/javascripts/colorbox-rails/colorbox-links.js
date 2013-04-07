@@ -46,7 +46,7 @@ $(document).ready(function() {
                 title: function() { return $(this).data("colorbox-title") || false },
                 className: function() { return $(this).data("colorbox-class-name") || false },
                 href: function() { return $(this).attr('href') },
-                inline: function() { return $(this).data("colorbox-inline") || false}
+                inline: function() { return $(this).data("colorbox-inline") || false},
                 opacity: 0.5
             });
 });
