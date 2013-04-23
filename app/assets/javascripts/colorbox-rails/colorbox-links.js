@@ -12,7 +12,7 @@
 
 $(document).ready(function() {
 	
-    $('a[data-colorbox="true"]').on('click', function(e) {
+    $(document).on('click', 'a[data-colorbox="true"]', function(e) {
         e.preventDefault();
 
         $.colorbox(
