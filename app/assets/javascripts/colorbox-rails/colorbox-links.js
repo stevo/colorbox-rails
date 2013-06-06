@@ -27,7 +27,7 @@ $(document).ready(function() {
                 innerWidth: $(this).data("colorbox-innerwidth") || false,
                 title: $(this).data("colorbox-title") || false,
                 className: $(this).data("colorbox-class-name") || false,
-                href: $(this).attr('href'),
+                href: $(this).data("colorbox-href") || $(this).attr('href'),
                 inline: $(this).data("colorbox-inline") || false,
                 opacity: 0.5
             });
@@ -45,7 +45,7 @@ $(document).ready(function() {
                 innerWidth: function() { return $(this).data("colorbox-innerwidth") || false },
                 title: function() { return $(this).data("colorbox-title") || false },
                 className: function() { return $(this).data("colorbox-class-name") || false },
-                href: function() { return $(this).attr('href') },
+                href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
                 inline: function() { return $(this).data("colorbox-inline") || false},
                 opacity: 0.5
             });
