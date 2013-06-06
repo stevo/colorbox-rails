@@ -12,7 +12,7 @@
 
 $(document).ready(function() {
 	
-    $(document).on('click', 'a[data-colorbox="true"]', function(e) {
+    $(document).on('click', '[data-colorbox="true"]', function(e) {
         e.preventDefault();
 
         $.colorbox(
@@ -33,7 +33,7 @@ $(document).ready(function() {
             });
     });
 
-    $('a[data-colorbox-static="true"]').colorbox(
+    $('[data-colorbox-static="true"]').colorbox(
             { 
                 height: function() { return $(this).data("colorbox-height") || false },
                 width: function() { return $(this).data("colorbox-width") || false },
