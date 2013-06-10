@@ -29,6 +29,7 @@ $(document).ready(function() {
                 className: $(this).data("colorbox-class-name") || false,
                 href: $(this).data("colorbox-href") || $(this).attr('href'),
                 inline: $(this).data("colorbox-inline") || false,
+                rel: $(this).data("colorbox-rel") || false,
                 opacity: 0.5
             });
     });
@@ -46,7 +47,8 @@ $(document).ready(function() {
                 title: function() { return $(this).data("colorbox-title") || false },
                 className: function() { return $(this).data("colorbox-class-name") || false },
                 href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
-                inline: function() { return $(this).data("colorbox-inline") || false},
+                inline: function() { return $(this).data("colorbox-inline") || false },
+                rel: function() { return $(this).data("colorbox-rel") || false },
                 opacity: 0.5
             });
 });
