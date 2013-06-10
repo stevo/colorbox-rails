@@ -9,7 +9,7 @@ require "colorbox-rails/version"
 Gem::Specification.new do |s|
   s.name        = "colorbox-rails"
   s.version     = ColorboxRails::VERSION
-  s.authors     = ["Błażej Kosmowski", "Bartłomiej Danek", "Alexander Maslov"]
+  s.authors     = ["Błażej Kosmowski", "Bartłomiej Danek", "Alexander Maslov", "Torsten Trautwein"]
   s.email       = ["b.kosmowski@selleo.com"]
   s.homepage    = "http://www.selleo.com"
   s.summary     = "Simple engine making colorbox use in rails super easy"
