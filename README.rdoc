@@ -39,9 +39,9 @@ Add attributes inside the :data block
 
 = Available link options
 
-* rel (need colorbox-static data-attribute to work) (http://www.jacklmoore.com/colorbox/#setting-rel)
+* rel (http://www.jacklmoore.com/colorbox/#setting-rel)
 
-<tt><%= link_to "My superb link", "#", rel: 'group1', :data => { :colorbox_static => true } %></tt>
+<tt><%= link_to "My superb link", "#", rel: 'group1', :data => { :colorbox => true } %></tt>
 
 = License
 
