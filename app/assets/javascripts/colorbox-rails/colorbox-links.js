@@ -10,7 +10,7 @@
 
 $(document).ready(function() {
   
-  function refreshColorboxLinks() {
+  function initiateColorboxLinks() {
     $('[data-colorbox="true"]').colorbox({
       height: function() { return $(this).data("colorbox-height") || false },
       width: function() { return $(this).data("colorbox-width") || false },
@@ -31,12 +31,10 @@ $(document).ready(function() {
   $(document).on('click', '[data-colorbox="true"]', function(e) {
       e.preventDefault();
 
-      refreshColorboxLinks();
+      initiateColorboxLinks();
   });
 
-  $(document).change(function() {
-    refreshColorboxLinks();
-  });
+  initiateColorboxLinks();
 });
 
 }) (jQuery);
