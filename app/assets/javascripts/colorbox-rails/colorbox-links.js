@@ -13,40 +13,23 @@ $(document).ready(function() {
     $(document).on('click', '[data-colorbox="true"]', function(e) {
         e.preventDefault();
 
-        $.colorbox(
-            {
-                height: $(this).data("colorbox-height") || false,
-                width: $(this).data("colorbox-width") || false,
-                maxWidth: $(this).data("colorbox-max-width") || false,
-                maxHeight: $(this).data("colorbox-max-height") || false,
-                iframe: $(this).data("colorbox-iframe") || false,
-                photo: $(this).data("colorbox-photo") || false,
-                innerHeight: $(this).data("colorbox-innerheight") || false,
-                innerWidth: $(this).data("colorbox-innerwidth") || false,
-                title: $(this).data("colorbox-title") || false,
-                className: $(this).data("colorbox-class-name") || false,
-                href: $(this).data("colorbox-href") || $(this).attr('href'),
-                inline: $(this).data("colorbox-inline") || false,
-                opacity: 0.5
-            });
+        $('[data-colorbox="true"]').colorbox(
+	    {
+	        height: function() { return $(this).data("colorbox-height") || false },
+	        width: function() { return $(this).data("colorbox-width") || false },
+	        maxWidth: function() { return $(this).data("colorbox-max-width") || false },
+	        maxHeight: function() { return $(this).data("colorbox-max-height") || false },
+	        iframe: function() { return $(this).data("colorbox-iframe") || false },
+	        photo: function() { return $(this).data("colorbox-photo") || false },
+	        innerHeight: function() { return $(this).data("colorbox-innerheight") || false },
+	        innerWidth: function() { return $(this).data("colorbox-innerwidth") || false },
+	        title: function() { return $(this).data("colorbox-title") || false },
+	        className: function() { return $(this).data("colorbox-class-name") || false },
+	        href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
+	        inline: function() { return $(this).data("colorbox-inline") || false },
+	        opacity: 0.5
+	    });
     });
-
-    $('[data-colorbox-static="true"]').colorbox(
-            { 
-                height: function() { return $(this).data("colorbox-height") || false },
-                width: function() { return $(this).data("colorbox-width") || false },
-                maxWidth: function() { return $(this).data("colorbox-max-width") || false },
-                maxHeight: function() { return $(this).data("colorbox-max-height") || false },
-                iframe: function() { return $(this).data("colorbox-iframe") || false },
-                photo: function() { return $(this).data("colorbox-photo") || false },
-                innerHeight: function() { return $(this).data("colorbox-innerheight") || false },
-                innerWidth: function() { return $(this).data("colorbox-innerwidth") || false },
-                title: function() { return $(this).data("colorbox-title") || false },
-                className: function() { return $(this).data("colorbox-class-name") || false },
-                href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
-                inline: function() { return $(this).data("colorbox-inline") || false },
-                opacity: 0.5
-            });
 });
 
 }) (jQuery);
