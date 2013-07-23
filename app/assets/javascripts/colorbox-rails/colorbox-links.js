@@ -7,9 +7,14 @@
 //= require_tree .
 
 (function($){
+  // injecting colorbox nodes when using turbolinks
+  $colorboxOverlay = ''
+  $colorboxBox = ''
 
-  $(document).ready(function() {
-    
+  $(document).on('ready', function() {
+    $colorboxOverlay = $("#cboxOverlay")
+    $colorboxBox = $("#colorbox")
+  
     $(document).on('click', '[data-colorbox="true"]', function(e) {
       e.preventDefault();
 
@@ -46,5 +51,10 @@
       opacity: 0.5
     });
   });
+  
+  $(document).on('page:change', function() {
+      $colorboxOverlay.appendTo("body")
+      $colorboxBox.appendTo("body")
+  });      
 
 }) (jQuery);
