@@ -36,6 +36,7 @@ Add attributes inside the :data block
 * colorbox-title (http://www.jacklmoore.com/colorbox/#setting-title)
 * colorbox-class-name (http://www.jacklmoore.com/colorbox/#setting-className)
 * colorbox-href (http://www.jacklmoore.com/colorbox/#setting-href)
+* colorbox-html (http://www.jacklmoore.com/colorbox/#setting-html)
 
 = Available link options
 
