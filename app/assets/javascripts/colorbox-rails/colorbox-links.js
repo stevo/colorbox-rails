@@ -8,12 +8,12 @@
 
 (function($){
   // injecting colorbox nodes when using turbolinks
-  $colorboxOverlay = ''
-  $colorboxBox = ''
+  $colorboxOverlay = '';
+  $colorboxBox = '';
 
   $(document).on('ready', function() {
-    $colorboxOverlay = $("#cboxOverlay")
-    $colorboxBox = $("#colorbox")
+    $colorboxOverlay = $("#cboxOverlay");
+    $colorboxBox = $("#colorbox");
   
     $(document).on('click', '[data-colorbox="true"]', function(e) {
       e.preventDefault();
@@ -30,6 +30,7 @@
         title: $(this).data("colorbox-title") || false,
         className: $(this).data("colorbox-class-name") || false,
         href: $(this).data("colorbox-href") || $(this).attr('href'),
+        html: $(this).data("colorbox-html") || false,
         inline: $(this).data("colorbox-inline") || false,
         opacity: 0.5
       });
@@ -47,14 +48,15 @@
       title: function() { return $(this).data("colorbox-title") || false },
       className: function() { return $(this).data("colorbox-class-name") || false },
       href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
+      html: function() { return $(this).data("colorbox-html") || false },
       inline: function() { return $(this).data("colorbox-inline") || false },
       opacity: 0.5
     });
   });
   
   $(document).on('page:change', function() {
-      $colorboxOverlay.appendTo("body")
-      $colorboxBox.appendTo("body")
+      $colorboxOverlay.appendTo("body");
+      $colorboxBox.appendTo("body");
   });      
 
 }) (jQuery);
