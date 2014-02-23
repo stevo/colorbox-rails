@@ -55,8 +55,11 @@
   });
   
   $(document).on('page:change', function() {
-      $colorboxOverlay.appendTo("body");
-      $colorboxBox.appendTo("body");
+      if($colorboxOverlay)
+          $colorboxOverlay.appendTo("body");
+
+      if($colorboxBox)
+          $colorboxBox.appendTo("body");
   });      
 
 }) (jQuery);
